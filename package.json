@@ -2,9 +2,11 @@
   "name": "merncommunitygardens",
   "version": "1.0.0",
   "description": "test form with mongo db for community gardens dummy data",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "server": "nodemon server.js"
+
   },
   "repository": {
     "type": "git",
@@ -24,5 +26,14 @@
   "bugs": {
     "url": "https://github.com/kilik42/testMernFromUA/issues"
   },
-  "homepage": "https://github.com/kilik42/testMernFromUA#readme"
+  "homepage": "https://github.com/kilik42/testMernFromUA#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.0.1",
+    "express": "^4.16.3",
+    "mongoose": "^5.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  }
 }
